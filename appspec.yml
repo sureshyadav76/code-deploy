@@ -1,20 +1,20 @@
-version: 0.0
+[version: 0.0
 os: linux
-
-files:
+][]
+files[]:
   - source: /
     destination: /home/ubuntu/server
 
 hooks:
-  BeforeInstall:
+  BeforeIn[]stall:
     - location: scripts/before_install.sh
-      timeout: 180
+      timeou[]t: 180
       runas: root
-  Install:
-    - location: scripts/install_dependencies.sh
+  Install:[]
+    - locati][]on: scripts/install_dependencies.sh
       timeout: 180
-      runas: root
-  ApplicationStart:
+      runas: []]root
+  Application]Start:
     - location: scripts/start_server.sh
       timeout: 180
       runas: ubuntu
